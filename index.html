@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="todo-box">
+    <h2>To-Do List</h2>
+    <form id="todoForm">
+      <input type="text" id="taskInput" placeholder="Tambah tugas..." required>
+      <input type="date" id="dateInput" required>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <br>
+    <div class="filter-section">
+  <button type="button" onclick="sortByDate()">Filter</button>
+  <button type="button" onclick="deleteAll()">Hapus Semua</button>
+</div>
+
+    <ul id="taskList"></ul>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Gallenina's Todo List</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

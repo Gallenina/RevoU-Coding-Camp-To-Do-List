@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #17032f;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-box h2 {
+  color: #ffffff; /* oranye */
+}
+
+.todo-box {
+  background-color: #481284;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(131, 70, 160, 0.2);
+}
+
+.todo-box h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="date"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 8px 12px;
+  border: none;
+  background: #043d06;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0e4f11;
+}
+
+.filter-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.filter-section button {
+  padding: 8px 14px;
+  background: #110956;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-section button:hover {
+  background: #2b2688;
+}
+
+#filter {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  background: rgb(81, 10, 63);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: rgb(139, 0, 97);
+}
+
+.filter-section button:nth-child(2) {
+  background: rgb(81, 10, 63);
+}
+
+.filter-section button:nth-child(2):hover {
+  background: rgb(139, 0, 97);
+}
+
+footer p {
+  color: white; 
+  margin: 5;    
+}
